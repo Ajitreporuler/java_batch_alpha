@@ -14,15 +14,20 @@ public static void main(String[] args) {
 	
 	
 	//mixmatching
-	
-	Demo2 ref=(Demo2) new Demo1();
+	//down casting
+	//Demo2 ref=(Demo2) new Demo1();
 	//Demo1 should be casted to Demo2
 	
-	Demo1 ref2=(Demo1)new Demo2();
-	
-	ref2.test();
-	demo2.test();
-	demo2.display();
+	//upcasting
+	Demo1 ref2=new Demo2();//default casting by jvm
+	//Demo1 ref3=(Demo1)new Demo2();//explicit casting 
+	//downcasting
+	Demo2 refDowncasting=(Demo2) ref2;
+	refDowncasting.display();
+	refDowncasting.test();
+//	ref2.test();
+//	demo2.test();
+//	demo2.display();
 //demo2 should be casted to demo1
 	
 	
